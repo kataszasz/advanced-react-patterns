@@ -38,7 +38,7 @@ function useToggle({
   const [state, dispatch] = React.useReducer(reducer, initialState)
 
   const onIsControlled = controlledOn != null
-  const on = onIsControlled ? controlledOn : state.on
+  const on = onIsControlled ? 'on' : state.on
 
   const hasOnChange = Boolean(onChange)
   React.useEffect(() => {
